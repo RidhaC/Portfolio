@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Why I Practice CTFs Every Weekend",
+    "date": "2025-06-01",
+    "content": "Sharpening my skills with real-world scenarios through weekly Capture The Flag challenges. I walk through tools, strategies, and how I’m leveling up."
+  },
+  {
+    "title": "Lock It Down: My Top Linux Hardening Tips",
+    "date": "2025-05-20",
+    "content": "From SSH configs to auditing and user restrictions — here's how I secure every fresh Linux box I touch."
+  }
+]

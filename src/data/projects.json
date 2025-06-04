@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Wireshark Packet Analysis",
+    "description": "Captured and analyzed live traffic to identify malicious behavior and vulnerabilities in a simulated network environment.",
+    "technologies": ["Wireshark", "TCP/IP", "DNS", "MITM"],
+    "link": "https://github.com/yourusername/wireshark-analysis"
+  },
+  {
+    "title": "Linux Hardening Script",
+    "description": "Built a Bash script to automate hardening steps on Ubuntu systems, including firewall configuration, service disabling, and log auditing.",
+    "technologies": ["Bash", "Linux", "Security", "Audit"],
+    "link": "https://github.com/yourusername/linux-hardening"
+  }
+]
