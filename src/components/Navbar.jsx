@@ -14,7 +14,13 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 px-6 py-4 shadow-md sticky top-0 z-50">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <h1 className="text-2xl font-bold text-blue-400">Ridha Chehime Portfolio</h1>
+        {/* Logo + Title */}
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/icon2.png" alt="RC Logo" className="h-8 w-8 object-contain" />
+          <span className="text-xl font-bold text-blue-400">Portfolio</span>
+        </Link>
+
+        {/* Navigation Links */}
         <ul className="flex gap-6">
           {navItems.map((item) => (
             <li key={item.path}>

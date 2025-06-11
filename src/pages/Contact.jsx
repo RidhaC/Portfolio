@@ -41,10 +41,6 @@ const Contact = () => {
           <p className="text-sm text-gray-300">github.com/RidhaC</p>
         </a>
       </div>
-
-      <p className="mt-12 text-center text-sm text-gray-600">
-        &copy; 2025 Ridha Chehime • Built with 💻 and ☕
-      </p>
     </div>
   );
 };
