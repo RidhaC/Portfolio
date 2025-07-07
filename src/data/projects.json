@@ -3,7 +3,7 @@
     "title": "FoodHub Data Analysis",
     "description": "Performed exploratory data analysis for a food delivery company to understand customer demand across restaurants and cuisines. Generated actionable insights to improve customer experience and support business decisions.",
     "technologies": ["Python", "Numpy", "Pandas", "Seaborn", "Exploratory Data Analysis", "Business Recommendations"],
-    "link": "https://github.com/RidhaC/FoodHub-Data-Analysis"
+    "link": "https://github.com/RidhaC/Foodhub-Data-Analysis"
   },
   {
     "title": "Keylogger",
@@ -18,10 +18,10 @@
     "link": "https://github.com/RidhaC/Basic-Net-Scanner"
   },
   {
-    "title": "VulnScan",
+    "title": "Vulnerability Scanner",
     "description": "A lightweight Python vulnerability scanner that scans target IPs/URLs for open ports, HTTP security headers, SSL/TLS certificate info, and known CVEs through banner-based lookup.",
     "technologies": ["Python", "Security Scanning", "Networking", "Cybersecurity"],
-    "link": "https://github.com/RidhaC/VulnScan"
+    "link": "https://github.com/RidhaC/Vulnscan"
   },
   {
     "title": "SecurePass - Password Health & Breach Monitoring App",
@@ -31,7 +31,7 @@
   },
   {
     "title": "File I/O Utility Library (Custom Insert, Delete, Extract)",
-    "description": "Developed a low-level file manipulation library in C using system calls to insert, delete, and extract bytes from files at arbitrary positions—without relying on stdio. Designed for systems programming coursework.",
+    "description": "Developed a low-level file manipulation library in C using system calls to insert, delete, and extract bytes from files at arbitrary positions without relying on stdio. Designed for systems programming coursework.",
     "technologies": ["C", "UNIX", "System Calls", "Makefile"],
     "link": "https://github.com/RidhaC/File-I-O-Utility-Library"
   }

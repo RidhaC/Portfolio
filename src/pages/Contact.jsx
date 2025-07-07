@@ -5,7 +5,7 @@ const Contact = () => {
     <div className="px-6 py-12 max-w-4xl mx-auto text-white">
       <h2 className="text-3xl font-bold text-blue-400 text-center mb-6">Let's Connect</h2>
       <p className="text-center text-gray-400 mb-10">
-        Whether you have a question, want to collaborate, or just want to say hi —
+        Whether you have a question, want to collaborate, or just want to say hi,
         my inbox is always open.
       </p>
 
