@@ -1,9 +1,9 @@
 [
   {
-    "title": "FoodHub Data Analysis",
-    "description": "Performed exploratory data analysis for a food delivery company to understand customer demand across restaurants and cuisines. Generated actionable insights to improve customer experience and support business decisions.",
-    "technologies": ["Python", "Numpy", "Pandas", "Seaborn", "Exploratory Data Analysis", "Business Recommendations"],
-    "link": "https://github.com/RidhaC/Foodhub-Data-Analysis"
+    "title": "Secure Password Manager",
+    "description": "Built a secure, offline desktop password manager as part of a collaborative group project. The application encrypts all stored credentials using AES-256, secures access with a master password and multi-factor authentication (TOTP), and includes features such as password generation, strength analysis, reuse detection, and age-based security alerts.",
+    "technologies": ["Python","AES-256","SHA-256","SQLite","Cryptography","TOTP","MFA","CustomTkinter","Secure Authentication","Password Security","Software Testing","Team Collaboration"],
+    "link": "https://github.com/RidhaC/Password_Manager"
   },
   {
     "title": "Keylogger",
@@ -28,6 +28,42 @@
     "description": "A full-stack app that checks password strength and known data breaches using HaveIBeenPwned API and zxcvbn.",
     "technologies": ["React", "Node.js", "Tailwind CSS", "API", "Cybersecurity"],
     "link": "https://github.com/RidhaC/SecurePass-Password-Health-Breach-Monitoring-App"
+  },
+  {
+    "title": "FoodHub Data Analysis",
+    "description": "Performed exploratory data analysis for a food delivery company to understand customer demand across restaurants and cuisines. Generated actionable insights to improve customer experience and support business decisions.",
+    "technologies": ["Python", "Numpy", "Pandas", "Seaborn", "Exploratory Data Analysis", "Business Recommendations"],
+    "link": "https://github.com/RidhaC/Foodhub-Data-Analysis"
+  },
+  {
+    "title": "Personal Loan Purchase Prediction",
+    "description": "Built a machine learning classification model to predict whether liability customers are likely to purchase personal loans. Performed exploratory data analysis, feature correlation analysis, and customer segmentation to identify key attributes influencing loan adoption and support targeted marketing strategies.",
+    "technologies": ["Python", "Pandas", "NumPy", "Scikit-learn", "Exploratory Data Analysis", "Classification Models", "Feature Engineering", "Business Insights"],
+    "link": "https://github.com/RidhaC/AIML_ML"
+  },
+  {
+    "title": "Visa Approval Prediction",
+    "description": "Developed a machine learning classification model to predict visa application outcomes based on applicant and employer attributes. Performed extensive exploratory data analysis, data preprocessing, and model evaluation to identify key factors influencing visa certification decisions and support data-driven screening recommendations.",
+    "technologies": ["Python","Pandas","NumPy","Scikit-learn","XGBoost","Exploratory Data Analysis","Classification Models","Feature Engineering","Model Evaluation"],
+    "link": "https://github.com/RidhaC/EasyVisa"
+  },
+  {
+    "title": "Predictive Maintenance for Wind Turbine Failures",
+    "description": "Built and evaluated multiple classification models to predict wind turbine generator failures using sensor data. Focused on cost-sensitive decision making by minimizing false negatives to reduce expensive equipment replacements while balancing inspection and repair costs through model tuning and performance comparison.",
+    "technologies": ["Python","Pandas","NumPy","Scikit-learn","TensorFlow","Neural Networks","Classification Models","Exploratory Data Analysis","Model Evaluation"],
+    "link": "https://github.com/RidhaC/ReneWind"
+  },
+  {
+    "title": "Medical Question Answering System using RAG",
+    "description": "Developed a retrieval-augmented generation (RAG) system to support medical question answering using the Merck Manuals as a trusted knowledge source. Built a pipeline to load and chunk large medical documents, generate embeddings, store them in a vector database, and retrieve relevant context to ground LLM responses for diagnostic, treatment, and clinical protocol queries.",
+    "technologies": ["Python","LangChain","Llama.cpp","Hugging Face","ChromaDB","Sentence Transformers","Vector Databases","Retrieval-Augmented Generation (RAG)","Prompt Engineering"],
+    "link": "https://github.com/RidhaC/NLP_RAG"
+  },
+  {
+    "title": "Safety Helmet Detection using Computer Vision",
+    "description": "Developed an image classification system to automatically detect whether workers are wearing safety helmets in hazardous environments. Built and evaluated multiple convolutional neural network (CNN) models, including transfer learning with VGG16 and data augmentation, to improve classification accuracy and support automated workplace safety monitoring.",
+    "technologies": ["Python","TensorFlow","Keras","OpenCV","Convolutional Neural Networks (CNNs)","Transfer Learning","Image Classification","Data Augmentation","Model Evaluation"],
+    "link": "https://github.com/RidhaC/Helmnet"
   },
   {
     "title": "File I/O Utility Library (Custom Insert, Delete, Extract)",
