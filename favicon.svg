@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
+  <rect width="34" height="34" fill="#020812"/>
+  <polygon points="6,0 34,0 28,34 0,34" fill="#0a1928" stroke="#00ff9d" stroke-width="1"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+    font-family="monospace" font-size="11" font-weight="700" fill="#00ff9d">RC</text>
+</svg>
