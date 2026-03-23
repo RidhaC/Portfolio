@@ -234,7 +234,7 @@ export default function Home() {
           {/* Skill bars */}
           <div>
             <p className="label" style={{ marginBottom:6 }}>Proficiency</p>
-            <h2 className="section-title" style={{ marginBottom:"2.5rem" }}>Technical Arsenal</h2>
+            <h2 className="section-title" style={{ marginBottom:"2.5rem" }}>Technical Skills</h2>
             {SKILLS.map((sk, i) => (
               <div key={sk.name} style={{ marginBottom:"1.4rem" }}>
                 <div style={{ display:"flex", justifyContent:"space-between", marginBottom:6 }}>
