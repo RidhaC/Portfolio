@@ -5,30 +5,61 @@ import BlogPost from "../components/BlogPost";
 
 function MatrixRain() {
   const ref = useRef(null);
+
   useEffect(() => {
     const c = ref.current; if (!c) return;
     const ctx = c.getContext("2d");
+
     const resize = () => { c.width = window.innerWidth; c.height = window.innerHeight; };
     resize();
     window.addEventListener("resize", resize);
-    const chars = "01アイウエカキサシスBCDEFGHJKLMNPQRSTUVWXYZ";
-    const cols = Math.floor(c.width / 14);
+
+    const chars = "01アイウエカキBCDEFGHJKLMN";
+    const cols = Math.floor(c.width / 20); // wider columns = fewer draws
     const drops = Array(cols).fill(1);
-    const draw = () => {
-      ctx.fillStyle = "rgba(2,8,18,0.06)";
+
+    let animId;
+    let lastTime = 0;
+    const fps = 20; // cap at 20fps instead of ~18fps via setInterval
+    const interval = 1000 / fps;
+
+    const draw = (timestamp) => {
+      animId = requestAnimationFrame(draw);
+      if (timestamp - lastTime < interval) return;
+      lastTime = timestamp;
+
+      ctx.fillStyle = "rgba(2,8,18,0.08)";
       ctx.fillRect(0, 0, c.width, c.height);
       ctx.fillStyle = "#00ff9d";
-      ctx.font = "12px 'Space Mono',monospace";
+      ctx.font = "12px monospace";
+
       drops.forEach((y, i) => {
-        ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * 14, y * 14);
-        if (y * 14 > c.height && Math.random() > 0.975) drops[i] = 0;
+        ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * 20, y * 20);
+        if (y * 20 > c.height && Math.random() > 0.975) drops[i] = 0;
         drops[i]++;
       });
     };
-    const id = setInterval(draw, 55);
-    return () => { clearInterval(id); window.removeEventListener("resize", resize); };
+
+    animId = requestAnimationFrame(draw);
+
+    return () => {
+      cancelAnimationFrame(animId);
+      window.removeEventListener("resize", resize);
+    };
   }, []);
-  return <canvas ref={ref} style={{ position:"fixed",top:0,left:0,opacity:0.04,pointerEvents:"none",zIndex:0 }} />;
+
+  return (
+    <canvas
+      ref={ref}
+      style={{
+        position: "fixed", top: 0, left: 0,
+        opacity: 0.03,
+        pointerEvents: "none",
+        zIndex: 0,
+        willChange: "transform", // tells browser to composite on GPU
+      }}
+    />
+  );
 }
 
 function useTyping(words, speed = 85, pause = 1800) {
@@ -88,7 +119,7 @@ const STATS = [
   { val:"3.86", suf:"",  label:"GPA" },
   { val:"12",   suf:"+", label:"Projects" },
   { val:"2026", suf:"",  label:"Graduation" },
-  { val:"1",    suf:"",  label:"ISC2 Cert" },
+  { val:"2",    suf:"",  label:"Certs Earned" },
 ];
 
 export default function Home() {
@@ -192,10 +223,10 @@ export default function Home() {
                   { p:"$ ", t:"cat education.txt",                         c:"var(--accent)" },
                   { t:"> B.S. Cybersecurity — WMU (GPA: 3.86)",           c:"var(--accent-blue)" },
                   { t:"> AI/ML Cert — UT Austin McCombs",                  c:"var(--accent-blue)" },
-                  { p:"$ ", t:"cat certifications.txt",                    c:"var(--accent)" },
-                  { t:"> ISC2 CC — Active (Jun 2025)",                     c:"rgba(56,189,248,0.8)" },
-                  { t:"> CompTIA Network+ — In Progress",                  c:"rgba(56,189,248,0.6)" },
-                  { t:"> CompTIA Security+ — In Progress",                 c:"rgba(56,189,248,0.6)" },
+                  { p:"$ ", t:"cat certifications.txt",                        c:"var(--accent)" },
+                  { t:"> ISC2 CC — Completed (Jun 2025 – May 2028)",           c:"rgba(56,189,248,0.8)" },
+                  { t:"> CompTIA Network+ — Completed (Mar 2026 – Mar 2029)",  c:"rgba(56,189,248,0.8)" },
+                  { t:"> CompTIA Security+ — In Progress",                     c:"rgba(56,189,248,0.6)" },
                   { p:"$ ", t:"echo $AVAILABILITY",                        c:"var(--accent)" },
                   { t:"OPEN TO OPPORTUNITIES █",                           c:"var(--accent)", glow:true },
                 ].map((l,i) => (
@@ -269,10 +300,10 @@ export default function Home() {
             <div className="glass" style={{ padding:"1.25rem" }}>
               <p className="label" style={{ marginBottom:"0.75rem", fontSize:"0.6rem" }}>Certifications</p>
               {[
-                { name:"ISC2 — Certified in Cybersecurity (CC)", status:"Active",      color:"var(--accent)",    date:"Jun 2025 – May 2028" },
-                { name:"CompTIA Network+",                        status:"In Progress", color:"#fbbf24",          date:"Expected Apr 2026" },
-                { name:"CompTIA Security+",                       status:"In Progress", color:"#fbbf24",          date:"Expected Apr 2026" },
-                { name:"UT Austin — AI/ML Certificate",           status:"Completed",   color:"var(--accent)",    date:"May 2025 – Jan 2026" },
+                { name:"ISC2 — Certified in Cybersecurity (CC)", status:"Completed", color:"var(--accent)", date:"Jun 2025 – May 2028" },
+                { name:"CompTIA Network+",                        status:"Completed", color:"var(--accent)", date:"Mar 2026 – Mar 2029" },
+                { name:"CompTIA Security+",                       status:"In Progress", color:"#fbbf24",     date:"Expected Apr 2026" },
+                { name:"UT Austin — AI/ML Certificate",           status:"Completed", color:"var(--accent)", date:"May 2025 – Jan 2026" },
               ].map(cert => (
                 <div key={cert.name} style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"0.55rem 0", borderBottom:"1px solid rgba(0,255,157,0.05)", gap:8 }}>
                   <span style={{ fontFamily:"'Space Mono',monospace", fontSize:"0.7rem", color:"rgba(226,232,240,0.75)", flex:1 }}>{cert.name}</span>

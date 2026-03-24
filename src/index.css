@@ -28,7 +28,7 @@ body {
     radial-gradient(ellipse at 15% 40%, rgba(0, 255, 157, 0.04) 0%, transparent 55%),
     radial-gradient(ellipse at 85% 15%, rgba(56, 189, 248, 0.04) 0%, transparent 55%),
     radial-gradient(ellipse at 50% 90%, rgba(0, 255, 157, 0.03) 0%, transparent 50%);
-  background-attachment: fixed;
+  /* DELETE background-attachment: fixed — this is a major scroll killer */
   color: var(--text-primary);
   font-family: 'Syne', sans-serif;
   min-height: 100vh;
@@ -45,6 +45,8 @@ body::after {
   );
   pointer-events: none;
   z-index: 9998;
+  will-change: transform;
+  transform: translateZ(0); /* force GPU layer */
 }
 
 body::before {
@@ -57,15 +59,19 @@ body::before {
   background-size: 60px 60px;
   pointer-events: none;
   z-index: 0;
+  transform: translateZ(0); /* force GPU layer */
 }
 
 .glass {
   background: var(--glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px); /* reduce from 20px to 12px */
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
-  transition: all 0.35s ease;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+  /* remove "all" from transition — only transition what you need */
+  will-change: transform;
 }
+
 .glass:hover {
   background: var(--glass-hover);
   border-color: rgba(0, 255, 157, 0.3);

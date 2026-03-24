@@ -70,16 +70,16 @@ export default function Resume() {
               {
                 org:"ISC2",
                 name:"Certified in Cybersecurity (CC)",
-                status:"Active",
+                status:"Completed",
                 color:"var(--accent)",
                 date:"June 2025 – May 2028",
               },
               {
                 org:"CompTIA",
                 name:"Network+",
-                status:"In Progress",
-                color:"#fbbf24",
-                date:"Expected April 2026",
+                status:"Completed",
+                color:"var(--accent)",
+                date:"March 2026 – March 2029",
               },
               {
                 org:"CompTIA",

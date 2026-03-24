@@ -1,48 +1,13 @@
 [
   {
-    "title": "My First Post",
-    "date": "2025-06-23",
-    "content": "Welcome to my brand new website! I'll be using this space to share updates on my cybersecurity journey, projects, and thoughts on the tech world. Stay tuned for future posts!"
+    "title": "Passed CompTIA Network+ Today!",
+    "date": "2026-03-23",
+    "content": "Just got my results back and I passed Network+! Really relieved honestly. The exam was harder than I expected, not because of the subnetting or the theory stuff but because of the PBQs, the performance based questions at the start. Those are the ones where you actually have to configure things, drag cables into the right ports, troubleshoot a network diagram, set up a firewall rule. That is where I struggled most and looking back I should have spent way more time on hands on practice rather than just watching videos and doing multiple choice. If you are studying for Net+ right now do yourself a favor and get comfortable in a lab environment early. Two certs down now with ISC2 CC and Network+. Security+ is next before graduation."
   },
   {
-    "title": "I Passed My ISC2 Certified in Cybersecurity (CC) Exam",
-    "date": "2025-07-08",
-    "content": "Really excited to share that I passed the ISC2 CC exam this month! The exam covers five domains: Security Principles, Business Continuity and Disaster Recovery, Access Controls, Network Security, and Security Operations. I used the free ISC2 self-paced course and honestly it was more than enough. My biggest tip is to focus on understanding why each control exists rather than just memorizing definitions. Next up is Network+ and Security+ before graduation."
-  },
-  {
-    "title": "Salt Typhoon: When Nation-States Live Inside Your Telecom for Months",
-    "date": "2025-08-03",
-    "content": "Salt Typhoon is one of the scariest attacks I have read about. Chinese threat actors had persistent access to US telecom wiretap infrastructure for months without being caught. The part that really gets me is that the legal interception backdoors built into these networks were the exact thing that got exploited. This is why the argument against encryption backdoors is so important. You cannot build a door that only the good guys can use. If it exists, someone will eventually find it."
-  },
-  {
-    "title": "How I Am Studying for CompTIA Network+ and Security+",
-    "date": "2025-09-18",
-    "content": "With graduation coming up in April I am now seriously studying for both Network+ and Security+. For Network+ I am using Professor Messer's free YouTube course and practicing subnetting and VLANs in VirtualBox. For Security+ I am spending most of my time on incident response and threat intelligence since those line up with the SOC analyst roles I am targeting. One topic a day, Anki flashcards for acronyms, and a practice exam every weekend. Goal is both certs done before I walk."
-  },
-  {
-    "title": "A US General Shared Sensitive Info With an AI Chatbot",
-    "date": "2025-10-22",
-    "content": "This story hit hard. A senior US military official reportedly shared sensitive operational details with an AI assistant. Beyond the obvious security concerns, this is something happening in every company right now. People paste sensitive data into LLMs every day without thinking about where it goes or how it gets stored. From a security perspective this is a massive uncontrolled data leak hiding in plain sight. The threat is not the AI itself, it is the complete lack of governance and policy around how people use it."
-  },
-  {
-    "title": "The PowerSchool Breach Shows How Badly We Protect Student Data",
-    "date": "2025-11-14",
-    "content": "The PowerSchool breach exposed student and teacher records across North America including names, addresses, and SSNs. The attacker got in through a vendor maintenance portal with stolen credentials and no MFA on it. This is third-party vendor risk in its most basic form. Schools put what little IT budget they have into their own systems and then give admin access to a vendor running a legacy portal with basically no security. K-12 schools hold incredibly sensitive data on kids and they are consistently the least prepared to protect it."
-  },
-  {
-    "title": "Russian Actors Are Hijacking Signal and WhatsApp Through QR Codes",
-    "date": "2025-12-09",
-    "content": "The FBI put out a warning that Russian intelligence-linked groups are targeting Signal and WhatsApp accounts by tricking users into scanning malicious QR codes that link an attacker's device to the victim's account. What is interesting technically is that the encryption was never broken. They went around it completely by attacking the account linking process instead. It is a good reminder that strong encryption only protects the message in transit. If someone owns your device or your account setup process, the crypto does not matter."
-  },
-  {
-    "title": "Finished the UT Austin AI/ML Certificate",
-    "date": "2026-01-15",
-    "content": "I just finished the Post Graduate Program in AI and Machine Learning: Business Applications through UT Austin's McCombs School of Business. Eight projects over several months covering supervised learning, neural networks, NLP, and computer vision. My favorite was building a RAG-based medical Q&A system using LangChain and ChromaDB. The idea of grounding LLM responses in a trusted knowledge source to cut down on hallucinations is something I want to keep exploring. AI and cybersecurity together is the space I am most excited about going into."
-  },
-  {
-    "title": "Oracle IAM CVE-2026-21992: When Your Access Control System Gets Owned",
-    "date": "2026-02-04",
-    "content": "Oracle patched a critical vulnerability in Identity Manager that could let an unauthenticated attacker take over the entire IAM platform. Building an access review system for my senior design project makes this one feel very real. IAM systems are the most sensitive thing in any organization's infrastructure. If an attacker owns your identity platform they own everything connected to it. This CVE is a good example of why continuous monitoring and least-privilege enforcement matter even for the security tools themselves."
+    "title": "Stryker Got Hacked: Medtech Has a Serious Security Problem",
+    "date": "2026-03-14",
+    "content": "Stryker disclosed a breach this past week affecting business and employee data. Medtech companies are hard targets to defend because they are constantly acquiring smaller firms and inheriting whatever security debt comes with them. You can have solid security internally and then acquire a company running unpatched systems and suddenly your attack surface doubles overnight. The stakes are also higher than in most industries. Compromised medical device firmware or patient data is not just a compliance issue, it is a direct risk to people's safety."
   },
   {
     "title": "The Bybit Hack: $1.5 Billion Gone Through a Compromised UI",
@@ -50,8 +15,48 @@
     "content": "Lazarus Group stole $1.5 billion from Bybit in what is now the largest crypto theft ever. The attack compromised Safe's multisig wallet interface so that when Bybit's signers approved what looked like a normal transaction they were actually signing away the entire cold wallet. The thing that stands out to me is the patience and precision involved. This was not a phishing email. It was a supply chain attack that manipulated the one tool the team trusted to verify what they were signing. When your verification layer gets compromised your whole security model falls apart."
   },
   {
-    "title": "Stryker Got Hacked: Medtech Has a Serious Security Problem",
-    "date": "2026-03-14",
-    "content": "Stryker disclosed a breach this past week affecting business and employee data. Medtech companies are hard targets to defend because they are constantly acquiring smaller firms and inheriting whatever security debt comes with them. You can have solid security internally and then acquire a company running unpatched systems and suddenly your attack surface doubles overnight. The stakes are also higher than in most industries. Compromised medical device firmware or patient data is not just a compliance issue, it is a direct risk to people's safety."
+    "title": "Oracle IAM CVE-2026-21992: When Your Access Control System Gets Owned",
+    "date": "2026-02-04",
+    "content": "Oracle patched a critical vulnerability in Identity Manager that could let an unauthenticated attacker take over the entire IAM platform. Building an access review system for my senior design project makes this one feel very real. IAM systems are the most sensitive thing in any organization's infrastructure. If an attacker owns your identity platform they own everything connected to it. This CVE is a good example of why continuous monitoring and least-privilege enforcement matter even for the security tools themselves."
+  },
+  {
+    "title": "Finished the UT Austin AI/ML Certificate",
+    "date": "2026-01-15",
+    "content": "I just finished the Post Graduate Program in AI and Machine Learning: Business Applications through UT Austin's McCombs School of Business. Eight projects over several months covering supervised learning, neural networks, NLP, and computer vision. My favorite was building a RAG-based medical Q&A system using LangChain and ChromaDB. The idea of grounding LLM responses in a trusted knowledge source to cut down on hallucinations is something I want to keep exploring. AI and cybersecurity together is the space I am most excited about going into."
+  },
+  {
+    "title": "Russian Actors Are Hijacking Signal and WhatsApp Through QR Codes",
+    "date": "2025-12-09",
+    "content": "The FBI put out a warning that Russian intelligence-linked groups are targeting Signal and WhatsApp accounts by tricking users into scanning malicious QR codes that link an attacker's device to the victim's account. What is interesting technically is that the encryption was never broken. They went around it completely by attacking the account linking process instead. It is a good reminder that strong encryption only protects the message in transit. If someone owns your device or your account setup process, the crypto does not matter."
+  },
+  {
+    "title": "The PowerSchool Breach Shows How Badly We Protect Student Data",
+    "date": "2025-11-14",
+    "content": "The PowerSchool breach exposed student and teacher records across North America including names, addresses, and SSNs. The attacker got in through a vendor maintenance portal with stolen credentials and no MFA on it. This is third-party vendor risk in its most basic form. Schools put what little IT budget they have into their own systems and then give admin access to a vendor running a legacy portal with basically no security. K-12 schools hold incredibly sensitive data on kids and they are consistently the least prepared to protect it."
+  },
+  {
+    "title": "A US General Shared Sensitive Info With an AI Chatbot",
+    "date": "2025-10-22",
+    "content": "This story hit hard. A senior US military official reportedly shared sensitive operational details with an AI assistant. Beyond the obvious security concerns, this is something happening in every company right now. People paste sensitive data into LLMs every day without thinking about where it goes or how it gets stored. From a security perspective this is a massive uncontrolled data leak hiding in plain sight. The threat is not the AI itself, it is the complete lack of governance and policy around how people use it."
+  },
+  {
+    "title": "How I Am Studying for CompTIA Network+ and Security+",
+    "date": "2025-09-18",
+    "content": "With graduation coming up in April I am now seriously studying for both Network+ and Security+. For Network+ I am using Professor Messer's free YouTube course and practicing subnetting and VLANs in VirtualBox. For Security+ I am spending most of my time on incident response and threat intelligence since those line up with the SOC analyst roles I am targeting. One topic a day, Anki flashcards for acronyms, and a practice exam every weekend. Goal is both certs done before I walk."
+  },
+  {
+    "title": "Salt Typhoon: When Nation-States Live Inside Your Telecom for Months",
+    "date": "2025-08-03",
+    "content": "Salt Typhoon is one of the scariest attacks I have read about. Chinese threat actors had persistent access to US telecom wiretap infrastructure for months without being caught. The part that really gets me is that the legal interception backdoors built into these networks were the exact thing that got exploited. This is why the argument against encryption backdoors is so important. You cannot build a door that only the good guys can use. If it exists, someone will eventually find it."
+  },
+  {
+    "title": "I Passed My ISC2 Certified in Cybersecurity (CC) Exam",
+    "date": "2025-07-08",
+    "content": "Really excited to share that I passed the ISC2 CC exam this month! The exam covers five domains: Security Principles, Business Continuity and Disaster Recovery, Access Controls, Network Security, and Security Operations. I used the free ISC2 self-paced course and honestly it was more than enough. My biggest tip is to focus on understanding why each control exists rather than just memorizing definitions. Next up is Network+ and Security+ before graduation."
+  },
+  {
+    "title": "My First Post",
+    "date": "2025-06-23",
+    "content": "Welcome to my brand new website! I'll be using this space to share updates on my cybersecurity journey, projects, and thoughts on the tech world. Stay tuned for future posts!"
   }
 ]
