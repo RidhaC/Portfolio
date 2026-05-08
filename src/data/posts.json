@@ -1,5 +1,15 @@
 [
   {
+    "title": "I Graduated from WMU with My B.S. in Cybersecurity!",
+    "date": "2026-05-2",
+    "content": "I officially graduated from Western Michigan University with a Bachelor of Science in Cybersecurity and a Minor in Data Science. Really proud of this one. Four years of hard work, late nights, and a lot of learning. Finished with a 3.88 GPA while being part of both Alpha Lambda Delta and the Lee Honors College. Grateful for everyone who supported me along the way. On to the next chapter."
+  },
+  {
+    "title": "Passed CompTIA Security+!",
+    "date": "2026-05-1",
+    "content": "Got my Security+ results back and I passed! Really glad to have this done before graduation. The exam was tough, not because of the multiple choice but because of the PBQs. Same experience as Net+, the performance based questions are where you feel the real gap between knowing the material and actually being able to apply it. The domains I focused on most were threats, attacks and vulnerabilities and identity and access management since those line up with the SOC analyst and IR roles I want. Three certs done now, ISC2 CC, CompTIA Network+ and CompTIA Security+. Feels good going into graduation week with all three locked in."
+  },
+  {
     "title": "Passed CompTIA Network+ Today!",
     "date": "2026-03-24",
     "content": "Just got my results back and I passed Network+! Really relieved honestly. The exam was harder than I expected, not because of the subnetting or the theory stuff but because of the PBQs, the performance based questions at the start. Those are the ones where you actually have to configure things, drag cables into the right ports, troubleshoot a network diagram, set up a firewall rule. That is where I struggled most and looking back I should have spent way more time on hands on practice rather than just watching videos and doing multiple choice. If you are studying for Net+ right now do yourself a favor and get comfortable in a lab environment early. Two certs down now with ISC2 CC and Network+. Security+ is next before graduation."

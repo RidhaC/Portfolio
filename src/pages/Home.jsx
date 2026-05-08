@@ -116,10 +116,10 @@ const TOOLS = [
 ];
 
 const STATS = [
-  { val:"3.86", suf:"",  label:"GPA" },
+  { val:"3.88", suf:"",  label:"GPA" },
   { val:"12",   suf:"+", label:"Projects" },
-  { val:"2026", suf:"",  label:"Graduation" },
-  { val:"2",    suf:"",  label:"Certs Earned" },
+  { val:"2026", suf:"",  label:"Graduated" },
+  { val:"3",    suf:"",  label:"Certs Earned" },
 ];
 
 export default function Home() {
@@ -139,7 +139,7 @@ export default function Home() {
     return () => obs.disconnect();
   }, []);
 
-  const latest = posts[posts.length - 1];
+  const latest = posts[0];
 
   return (
     <div style={{ position:"relative", zIndex:1 }}>
@@ -221,12 +221,12 @@ export default function Home() {
                   { p:"$ ", t:"whoami",                                   c:"var(--accent)" },
                   { t:"ridha_chehime",                                     c:"rgba(226,232,240,0.7)" },
                   { p:"$ ", t:"cat education.txt",                         c:"var(--accent)" },
-                  { t:"> B.S. Cybersecurity — WMU (GPA: 3.86)",           c:"var(--accent-blue)" },
+                  { t:"> B.S. Cybersecurity — WMU (GPA: 3.88)",           c:"var(--accent-blue)" },
                   { t:"> AI/ML Cert — UT Austin McCombs",                  c:"var(--accent-blue)" },
                   { p:"$ ", t:"cat certifications.txt",                        c:"var(--accent)" },
                   { t:"> ISC2 CC — Completed (Jun 2025 – May 2028)",           c:"rgba(56,189,248,0.8)" },
-                  { t:"> CompTIA Network+ — Completed (Mar 2026 – Mar 2029)",  c:"rgba(56,189,248,0.8)" },
-                  { t:"> CompTIA Security+ — In Progress",                     c:"rgba(56,189,248,0.6)" },
+                  { t:"> CompTIA Network+ — Completed (May 2026 – May 2029)",  c:"rgba(56,189,248,0.8)" },
+                  { t:"> CompTIA Security+ — Completed (May 2026 – May 2029)",                     c:"rgba(56,189,248,0.8)" },
                   { p:"$ ", t:"echo $AVAILABILITY",                        c:"var(--accent)" },
                   { t:"OPEN TO OPPORTUNITIES █",                           c:"var(--accent)", glow:true },
                 ].map((l,i) => (
@@ -301,8 +301,8 @@ export default function Home() {
               <p className="label" style={{ marginBottom:"0.75rem", fontSize:"0.6rem" }}>Certifications</p>
               {[
                 { name:"ISC2 — Certified in Cybersecurity (CC)", status:"Completed", color:"var(--accent)", date:"Jun 2025 – May 2028" },
-                { name:"CompTIA Network+",                        status:"Completed", color:"var(--accent)", date:"Mar 2026 – Mar 2029" },
-                { name:"CompTIA Security+",                       status:"In Progress", color:"#fbbf24",     date:"Expected Apr 2026" },
+                { name:"CompTIA Network+",                        status:"Completed", color:"var(--accent)", date:"May 2026 – May 2029" },
+                { name:"CompTIA Security+",                       status:"Completed", color:"var(--accent)",     date:"May 2026 – May 2029" },
                 { name:"UT Austin — AI/ML Certificate",           status:"Completed", color:"var(--accent)", date:"May 2025 – Jan 2026" },
               ].map(cert => (
                 <div key={cert.name} style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"0.55rem 0", borderBottom:"1px solid rgba(0,255,157,0.05)", gap:8 }}>

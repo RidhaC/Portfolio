@@ -77,7 +77,7 @@ export default function Contact() {
                 Open to internships & entry-level roles
               </h3>
               <p style={{ fontSize:"0.875rem", color:"rgba(100,120,150,0.85)", lineHeight:1.7, maxWidth:480 }}>
-                Graduating April 2026. Seeking security engineering, penetration testing, SOC analyst,
+                Graduated May 2026. Seeking security engineering, penetration testing, SOC analyst,
                 and threat intelligence roles. Based in Kalamazoo, MI - open to remote.
               </p>
             </div>

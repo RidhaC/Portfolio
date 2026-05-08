@@ -46,7 +46,7 @@ export default function Resume() {
           <TimelineItem
             title="B.S. in Cybersecurity — Minor in Data Science"
             sub="Western Michigan University · Kalamazoo, MI"
-            date="Graduating April 2026"
+            date="Graduated May 2026"
             bullets={[
               "Lee Honors College",
             ]}
@@ -79,14 +79,14 @@ export default function Resume() {
                 name:"Network+",
                 status:"Completed",
                 color:"var(--accent)",
-                date:"March 2026 – March 2029",
+                date:"March 2026 – May 2029",
               },
               {
                 org:"CompTIA",
                 name:"Security+",
-                status:"In Progress",
-                color:"#fbbf24",
-                date:"Expected April 2026",
+                status:"Completed",
+                color:"var(--accent)",
+                date:"May 2026 – May 2029",
               },
             ].map(cert => (
               <div key={cert.name} className="glass" style={{ padding:"1.5rem", position:"relative" }}>
